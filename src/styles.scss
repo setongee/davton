@@ -1,0 +1,387 @@
+.header{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 80px;
+    align-items: center;
+    box-shadow: 0 5px 30px rgba($color: #000000, $alpha: .03);
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    
+
+    .navigate{
+        display: flex;
+        align-items: center;
+
+        li{
+            list-style: none;
+            margin: 0 20px;
+
+            a{
+                text-decoration: none;
+                color: #000;
+                font-size: 14px;
+                color: #6E6E6E;
+            }
+        }
+    
+    }
+
+    .logo{
+        width: 85%;
+    }
+}
+
+.postArea{
+    margin-top: 70px;
+}
+
+.davtonPosts{
+
+    width: 650px;
+    background-color: #fff;
+    padding: 20px 0;
+    margin : 0 auto;
+    border: 1px solid #f8f8f8;
+    position: relative;
+    box-shadow: 0 20px 20px rgba($color: #000000, $alpha: .03);
+    margin-bottom: 20px;
+
+    .dateArea{
+        padding: 0 20px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding-bottom: 20px;
+
+        .timestamp{
+            .date{
+                font-size: 15px;
+            }
+            .time{
+                font-size: 14px;
+                margin-top: 5px;
+                color: #999;
+            }
+        }
+    }
+
+    .post_img{
+        height: 320px;
+        width: 100%;
+        overflow: hidden;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    
+    .profile_identity{
+
+        padding: 0 20px;
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba($color: #000, $alpha: .1);
+
+        .identifier{
+
+            display: flex;
+            align-items: center;
+        }
+
+        .photo{
+            border-radius: 100%;
+            height: 50px;
+            width: 50px;
+            margin-right: 15px;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .profile_name{
+            .title{
+                font-size: 14px;
+                color: #777;
+                margin-top: 5px;
+            }
+        }
+
+        .chat-icon{
+            margin-right: 20px;
+        }
+    }
+
+    .reactions{
+        padding: 0 25px;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba($color: #000, $alpha: .1);
+
+        .showLikes{
+            position: absolute;
+            height: 60px;
+            background-color: #fff;
+            top: -7px;
+            display: flex;
+            align-items: center;
+            padding: 20px 30px;
+            left: 0px;
+            cursor: pointer;
+
+            .anim{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-bottom: 10px;
+                margin : 0 5px;
+
+                .topic{
+                    margin-top: 5px;
+                    position: absolute;
+                    bottom: -25px;
+                    background-color: rgb(240, 240, 240);
+                    padding: 7px 12px;
+                    border-radius: 100px;
+                    color: #777;
+                    font-size: 12px;
+                    display: none;
+
+                }
+
+                &:hover{
+
+                    .topic{
+                        display: block;
+                    }
+                    
+                }
+            }
+
+            .confussed{
+                margin-left: 15px;
+            }
+        }
+
+        .reactions-data{
+            display: flex;
+            color: #444;
+
+            .likes{
+                margin-right: 15px;
+            }
+
+            span{
+                font-weight: normal;
+            }
+        }
+
+        .add-reaction{
+            padding: 15px 20px;
+            background-color: royalblue;
+            border-radius: 10px;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    .postArea-post{
+
+        padding: 0 25px;
+
+        .post_body{
+            font-size: 15px;
+            margin: 20px 0;
+            margin-top: 30px;
+            line-height: 23px;
+            font-weight: 300;
+        }
+
+        .comment-me{
+
+            margin-top: 30px;
+
+            .mycomment{
+
+                display: flex;
+                align-items: center;
+                
+                .photoMy{
+
+                    border-radius: 100%;
+                    height: 50px;
+                    width: 50px;
+                    margin-right: 15px;
+                    overflow: hidden;
+                
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .comment-field{
+                    display: flex;
+                    padding: 16px 15px;
+                    border-radius: 10px;
+                    background-color: rgb(253, 253, 253);
+                    width: 80%;
+                    justify-content: space-between;
+                    border:1px solid rgba($color: #000, $alpha: .1);
+
+                    input{
+                        outline: none;
+                        border: none;
+                        background-color: transparent;
+
+                        width: 80%;
+                    }
+
+                    P{
+                        font-size: 14px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .commentsPost{
+
+            margin: 50px 0;
+            margin-left: 40px;
+            display: flex;
+
+            border-bottom: 1px solid rgba($color: #000, $alpha: .1);
+
+            padding-bottom: 25px;
+
+            .imageUrl-comment{
+                border-radius: 100%;
+                height: 50px;
+                width: 50px;
+                margin-right: 15px;
+                overflow: hidden;
+            
+                img{
+                    width: 100%;
+                }
+            }
+
+            .commentPin{
+                width: 80%;
+                margin-left: 10px;
+                font-size: 15px;
+                font-weight: 300;
+
+                .profilePin{
+                    display: flex;
+                    font-size: 14px;
+                    color: #777;
+
+                    .namePin{
+                        margin-left: 20px;
+                        font-weight: bold;
+                    }
+
+                    margin-bottom: 15px;
+
+                    
+                }
+
+                .comment-body{
+
+                    line-height: 20px;
+                    color: #444;
+
+                    .line-blaze{
+                        height: 1px;
+                        background-color: rgba($color: #000, $alpha: .1);
+                        margin: 20px 0;
+                    }
+
+                    .rep{
+                        font-size: 14px;
+                        font-weight: bold;
+                        margin-top: 15px;
+
+                        cursor: pointer;
+                    }
+
+                    .rep-pic{
+
+                        display: flex;
+                        margin-top: 20px;
+                        
+                        .phoot{
+                            border-radius: 100%;
+                            height: 50px;
+                            width: 50px;
+                            margin-right: 15px;
+                            overflow: hidden;
+
+                            img{
+                                width: 100%;
+                            }
+                            
+                        }
+
+                        .field{
+                            display: flex;
+                            padding: 16px 15px;
+                            border-radius: 10px;
+                            background-color: rgb(253, 253, 253);
+                            width: 80%;
+                            justify-content: space-between;
+                            border:1px solid rgba($color: #000, $alpha: .1);
+
+                            input{
+                                outline: none;
+                                border: none;
+                                background-color: transparent;
+
+                                width: 80%;
+                            }
+
+                            P{
+                                font-size: 14px;
+                                margin-right: 10px;
+                            }
+                            
+                        }
+                        
+                    }
+
+                    .replies{
+                        
+                        .reply{
+                            display: flex;
+
+                            .message-content{
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    
+    
+    
+    
+
+    
+
+}

@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.community{
+  overflow-x: hidden;
+  height: 100%;
+  padding-bottom: 100px;
+  font-family: 'GT Walsheim Pro';
+
+  .postArea-bd{
+    margin-top: 150px;
+  }
+}
